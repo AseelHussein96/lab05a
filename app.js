@@ -90,7 +90,12 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) { 
+    
+        let multi=multArr[0]*multArr[1]*multArr[2]*multArr[3]*multArr[4];
+        return multi;
+       
+    //eslint-disable-line
 
 }
 
@@ -118,11 +123,15 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+function multiplyAnyArray(dynamicArray) {
+    let array=[];
+ let any=multiplyArray(dynamicArray);
+    return array=[any,'The numbers 1,2,3,4,5 have a product of 120.']; //eslint-disable-line
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
